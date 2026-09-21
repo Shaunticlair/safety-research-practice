@@ -1,0 +1,42 @@
+{
+  "config": {
+    "model": "Qwen/Qwen3-8B",
+    "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "task_seed": 2026092017,
+    "levels": [
+      1,
+      2,
+      3
+    ],
+    "per_level": 24,
+    "arms": [
+      {
+        "name": "direct",
+        "thinking": false
+      },
+      {
+        "name": "thinking",
+        "thinking": true
+      }
+    ],
+    "colors": [
+      "red",
+      "blue",
+      "green",
+      "gold"
+    ]
+  },
+  "load_seconds": 24.39152503013611,
+  "started": 1789940256.3677917,
+  "python": "3.11.16",
+  "torch": "2.8.0+cu128",
+  "transformers": "4.57.6",
+  "vllm": "0.10.2",
+  "gpu": "NVIDIA H100 PCIe, 81559 MiB, 570.148.08",
+  "source_sha256": "8300fbba66222ff22a48c77669ecf13a4617327e88f47bc130685169cc3d1d50",
+  "request_sha256": "368203ef1be65ca1cb11805fc712b48e962830619d38a9a188982b9e4fc89681",
+  "resolved_model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "fresh_completions": 144,
+  "finished": 1789940310.3927832,
+  "inference_seconds": 29.633467197418213
+}

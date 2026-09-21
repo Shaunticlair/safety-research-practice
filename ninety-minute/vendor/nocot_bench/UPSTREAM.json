@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/neelnanda-io/nocot-bench",
+  "revision": "9b8ba4ac4229597b902bc540de6ddf111a4360cc",
+  "purpose": "Organizer source inspection and fresh-generator smoke test; not a participant inference runner.",
+  "files": "Subset downloaded unchanged; LICENSE governs reuse."
+}

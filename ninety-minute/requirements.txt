@@ -1,0 +1,5 @@
+# Tested on Linux, Python 3.11, one H100 PCIe; CUDA-capable PyTorch comes via vLLM.
+vllm==0.10.2
+transformers==4.57.6
+numpy==2.2.6
+matplotlib==3.11.2

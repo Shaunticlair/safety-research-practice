@@ -1,0 +1,50 @@
+# Public participant repository: ignore everything unless explicitly allowed.
+# Add intentional new participant files here before committing them.
+# Organizer notes, old pilots, release ZIPs, credentials, runs, models,
+# environments, caches and other generated files remain ignored.
+/*
+!/.gitignore
+!/README.md
+!/ninety-minute/
+/ninety-minute/**
+
+# Allow traversal only through directories used by the participant package.
+!/ninety-minute/cache/
+!/ninety-minute/configs/
+!/ninety-minute/slides_template/
+!/ninety-minute/vendor/
+!/ninety-minute/slides_template/figures/
+!/ninety-minute/vendor/nocot_bench/
+!/ninety-minute/vendor/nocot_bench/datagen/
+!/ninety-minute/vendor/nocot_bench/datagen/banks/
+
+# Explicit participant-file allowlist.
+!/ninety-minute/AI_LOGGING.md
+!/ninety-minute/AI_LOGS.md
+!/ninety-minute/MANIFEST.json
+!/ninety-minute/PILOT_FEEDBACK.md
+!/ninety-minute/PREDICTIONS.md
+!/ninety-minute/README.md
+!/ninety-minute/SETUP.md
+!/ninety-minute/SOURCES.md
+!/ninety-minute/cache/README.md
+!/ninety-minute/cache/baseline.jsonl
+!/ninety-minute/cache/baseline.jsonl.meta.json
+!/ninety-minute/cache/baseline.jsonl.source.py
+!/ninety-minute/configs/baseline.json
+!/ninety-minute/configs/smoke.json
+!/ninety-minute/requirements.txt
+!/ninety-minute/slides_template/README.md
+!/ninety-minute/slides_template/REMARK_LICENSE.txt
+!/ninety-minute/slides_template/build.py
+!/ninety-minute/slides_template/figures/README.md
+!/ninety-minute/slides_template/slides.html
+!/ninety-minute/slides_template/slides.md
+!/ninety-minute/starter.py
+!/ninety-minute/test_starter.py
+!/ninety-minute/vendor/nocot_bench/LICENSE
+!/ninety-minute/vendor/nocot_bench/UPSTREAM.json
+!/ninety-minute/vendor/nocot_bench/datagen/__init__.py
+!/ninety-minute/vendor/nocot_bench/datagen/banks/__init__.py
+!/ninety-minute/vendor/nocot_bench/datagen/banks/brew.py
+!/ninety-minute/vendor/nocot_bench/datagen/common.py

@@ -1,0 +1,25 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "task_seed": 1001,
+  "levels": [
+    1
+  ],
+  "per_level": 2,
+  "arms": [
+    {
+      "name": "direct",
+      "thinking": false
+    },
+    {
+      "name": "thinking",
+      "thinking": true
+    }
+  ],
+  "colors": [
+    "red",
+    "blue",
+    "green",
+    "gold"
+  ]
+}
