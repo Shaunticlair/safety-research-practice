@@ -16,7 +16,7 @@ You will compare a condition that permits visible reasoning with a condition tha
 
 The package includes raw outputs, an exact-answer grader, editable configurations, a task generator, and a cached baseline. You may reuse the baseline after recording your prediction; identify any cached results in your presentation. Your follow-up should include a new experiment.
 
-Use one H100, or a comparable GPU with a successful smoke test. Complete [setup](SETUP.md), model download, and the smoke test before starting the clock. No model training is required. The checkpoint revision is pinned in the configurations.
+**You need access to a GPU** for your new experiment: use one H100, or a comparable GPU with a successful smoke test. You can rent one through [Vast.ai](https://vast.ai/pricing), or **message Nabil to ask for an API key and setup instructions for GPU access**. Check the current rental rate and allow for setup/download time as well as the exercise. Complete [setup](SETUP.md), model download, and the smoke test before starting the clock. No model training is required. The checkpoint revision is pinned in the configurations.
 
 ## Reading
 
@@ -64,6 +64,39 @@ Use the graphs to explain the evidence in your own words. Short bullet notes are
 For each question, cover what you expected, what you compared, what you found, and what you now think. You do not need to narrate every run. One graph can cover both questions if it communicates the evidence clearly. A failed or inconclusive experiment can support a strong submission if you diagnose it carefully and calibrate your claims.
 
 AI assistance is allowed for coding, discussion, and analysis. Preserve the complete task-related conversations and tool traces, explain the work yourself, and keep predictions recorded before seeing results. If you use no AI assistance, say so in `AI_LOGS.md`; the reproduction code/configuration is still required.
+
+## Scoring rubric
+
+| Category | Weight |
+| --- | --- |
+| Communication | 20% |
+| Research answers | 70% — 35% each for Q1 and Q2 |
+| Steering and judgment | 10% |
+
+### Communication — 20%
+
+Present what you did and found clearly and faithfully. Appearance, editing, and presentation polish are not graded.
+
+- Graphs are easy to interpret, with clear labels and appropriate uncertainty estimates, such as confidence intervals.
+- Explain unfamiliar terms and use concise language in your own words. Avoid unnecessary jargon, filler, and boilerplate caveats.
+- Claims in the recording agree with, and can be traced to, your reproduction code, figures, and submitted AI logs.
+
+### Research answers — 70%
+
+Q1 and Q2 each receive 35%. Put each question's prediction, finding, and update on your slides, and explain them in the recording. Only answers presented there receive research-answer credit; additional results in the ZIP support verification but do not earn credit on their own. Brief bullets and one or two graphs are enough.
+
+- Predictions recorded before observing results have a reasonable justification. They are graded on reasoning, not whether they turn out to be right. Preserve the original predictions.
+- Interpret the observed results and explain how they change your view, including unexpected or inconclusive findings.
+- Make testable claims whose scope and confidence match the evidence, avoiding both overclaiming and underclaiming.
+- Address relevant confounders, measurement problems, and limitations.
+- Run the experiments needed to support the claims you choose to make within the time and hardware available. Causal claims need suitable interventions, not just correlations. One well-chosen follow-up is enough; narrow your claims when further testing is out of scope.
+- Implement the experiments and analysis correctly.
+
+### Steering and judgment — 10%
+
+Show your own research judgment, including how you direct and check AI assistance when you use it. Credit comes from choosing informative directions, allocating time and compute sensibly, and noticing and correcting mistakes.
+
+This is not a test of elaborate agent orchestration. Honest confusion and basic questions are welcome. For this category, AI logs provide evidence of helpful interventions; they are not used to penalize you for asking for help. If you use no AI assistance, your own experimental choices and reasoning provide the evidence for this category.
 
 ## Suggested pacing
 

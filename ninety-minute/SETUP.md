@@ -4,6 +4,8 @@ Run commands from this folder. The GPU path was tested on Linux, Python 3.11, on
 
 ## Before the clock
 
+Arrange GPU access before starting. You can rent an H100 through [Vast.ai](https://vast.ai/pricing), or **message Nabil to ask for an API key and setup instructions for GPU access**. Rental prices vary; check the current hourly rate and budget for installation/downloads plus the exercise. The supplied runner runs on the GPU machine using vLLM; a hosted chat-model API key alone does not plug into it.
+
 On the GPU machine, create an environment and install dependencies:
 
 ```bash
